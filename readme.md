@@ -8,37 +8,37 @@ There is no real database connection, authentication or any of that fancy stuff.
 ## Methods
 ### Ping
 ```
-[GET, POST] http:/localhost:5000/api/v1/ping
+[GET, POST] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/ping
 ```
 This method will just return the string "Ping? Pong!"
 
 ### Echo
 ```
-[POST] http:/localhost:5000/api/v1/echo
+[POST] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/echo
 ```
 As the name suggests, this method will return anything passed to it. You post "bacon" and echo will return "bacon".
 Please, don't try anything funny. I just decode requests.data and return it.
 
 ### Hash me 
 ```
-[GET, POST] http:/localhost:5000/api/v1/hashme
+[GET, POST] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/hashme
 ```
 Will return a random SHA256 hash.
 
 ### Users 
 ```
-[GET] http:/localhost:5000/api/v1/users
-[GET] http:/localhost:5000/api/v1/users?&format=json
-[GET] http:/localhost:5000/api/v1/users?&format=xml
+[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/users
+[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/users?&format=json
+[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/users?&format=xml
 ```
 This method will return a list of users from my dummy database. The default return format is JSON, but you can use the
 query argument "format" to specify if you want a XML instead.
 
 ### Catalog 
 ```
-[GET] http:/localhost:5000/api/v1/catalog
-[GET] http:/localhost:5000/api/v1/catalog?&format=json
-[GET] http:/localhost:5000/api/v1/catalog?&format=xml
+[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/catalog
+[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/catalog?&format=json
+[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/catalog?&format=xml
 ```
 This method will return a list of products from my dummy database. This list was used in a post where i showed how 
 to manipulate XML with XPATH in Python. 
@@ -49,9 +49,9 @@ The default return format is JSON, but you can use the query argument "format" t
 
 ### CD Catalog 
 ```
-[GET] http:/localhost:5000/api/v1/cdcatalog
-[GET] http:/localhost:5000/api/v1/cdcatalog?&format=json
-[GET] http:/localhost:5000/api/v1/cdcatalog?&format=xml
+[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/cdcatalog
+[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/cdcatalog?&format=json
+[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/cdcatalog?&format=xml
 ```
 This method will return a list of CDs from my dummy database. This list was used in a post where i showed how 
 to manipulate XML using Python. 
