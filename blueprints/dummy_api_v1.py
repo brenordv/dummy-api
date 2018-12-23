@@ -114,7 +114,7 @@ def get_catalog():
         return jsonify(str(why_e)), 500
 
 
-@api_v1.route("/cdcatalog", methods=["GET"])
+@api_v1.route("/cdcatalog", methods=["GET", "POST"])
 def get_cd_catalog():
     """
     Returns the catalog used in XML handling post.

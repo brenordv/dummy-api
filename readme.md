@@ -49,9 +49,9 @@ The default return format is JSON, but you can use the query argument "format" t
 
 ### CD Catalog 
 ```
-[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/cdcatalog
-[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/cdcatalog?&format=json
-[GET] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/cdcatalog?&format=xml
+[GET, POST] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/cdcatalog
+[GET, POST] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/cdcatalog?&format=json
+[GET, POST] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/cdcatalog?&format=xml
 ```
 This method will return a list of CDs from my dummy database. This list was used in a post where i showed how 
 to manipulate XML using Python. 
