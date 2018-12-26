@@ -63,6 +63,20 @@ def echo():
         return str(why_e), 500
 
 
+@api_v1.route("/echoargs", methods=["GET", "POST"])
+def echo_args():
+    """
+    Method used to test how Python is handling PowerBuilder requests.
+    Will decode ARGS sent from PB and return it to the requester.
+    :return: Decoded data sent from the requester.
+    """
+    try:
+        return jsonify(request.args), 200
+
+    except Exception as why_e:
+        return str(why_e), 500
+
+
 @api_v1.route("/hashme", methods=["GET", "POST"])
 def gen_hash():
     """
