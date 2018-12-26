@@ -12,6 +12,7 @@ There is no real database connection, authentication or any of that fancy stuff.
 ```
 This method will just return the string "Ping? Pong!"
 
+
 ### Echo
 ```
 [POST] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/echo
@@ -19,11 +20,20 @@ This method will just return the string "Ping? Pong!"
 As the name suggests, this method will return anything passed to it. You post "bacon" and echo will return "bacon".
 Please, don't try anything funny. I just decode requests.data and return it.
 
+
+### Echo Args
+```
+[POST] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/echoargs
+```
+As the name suggests, this method will return anything passed to it via querystring. 
+
+
 ### Hash me 
 ```
 [GET, POST] https://raccoon-ninja-dummy-api.herokuapp.com/api/v1/hashme
 ```
 Will return a random SHA256 hash.
+
 
 ### Users 
 ```
@@ -33,6 +43,7 @@ Will return a random SHA256 hash.
 ```
 This method will return a list of users from my dummy database. The default return format is JSON, but you can use the
 query argument "format" to specify if you want a XML instead.
+
 
 ### Catalog 
 ```
@@ -46,6 +57,7 @@ Post: http://raccoon.ninja/pt/dev-pt/usando-xpath-para-manipular-xml-python/
 (I have not created this database. Due credits are listed in the post.)
 
 The default return format is JSON, but you can use the query argument "format" to specify if you want a XML instead.
+
 
 ### CD Catalog 
 ```
